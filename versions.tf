@@ -1,5 +1,8 @@
 terraform {
   required_providers {
+    aws = {
+      source = "hashicorp/aws"
+    }
     mcaf = {
       source = "schubergphilis/mcaf"
     }
