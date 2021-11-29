@@ -21,6 +21,7 @@ MCAF terraform module to create an AWS account using Control Tower's Account Fac
 |------|-------------|------|---------|:--------:|
 | account | The name of the account | `string` | n/a | yes |
 | email | Email address of the account | `string` | n/a | yes |
+| group_id | The UUID of the O365 group | `string` | `00000000-0000-0000-0000-00000000000` | yes |
 | organizational\_unit | Organization unit to create the account in | `string` | n/a | yes |
 | sso\_email | The email address of the Control Tower SSO account | `string` | n/a | yes |
 | create\_email\_address | Controls the creation of the O365 email address | `bool` | `true` | no |

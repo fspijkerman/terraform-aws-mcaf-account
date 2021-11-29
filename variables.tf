@@ -14,6 +14,12 @@ variable "email" {
   description = "Email address of the account"
 }
 
+variable "group_id" {
+  type        = string
+  default     = "00000000-0000-0000-0000-00000000000"
+  description = "The UUID of the O365 group"
+}
+
 variable "organizational_unit" {
   type        = string
   description = "Organization unit to create the account in"

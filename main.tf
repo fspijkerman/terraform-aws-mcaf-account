@@ -3,8 +3,9 @@ locals {
 }
 
 resource "mcaf_o365_alias" "default" {
-  count = var.create_email_address ? 1 : 0
-  alias = var.email
+  count    = var.create_email_address ? 1 : 0
+  alias    = var.email
+  group_id = var.group_id
 }
 
 resource "mcaf_aws_account" "default" {
